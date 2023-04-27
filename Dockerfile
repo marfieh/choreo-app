@@ -16,9 +16,9 @@ COPY config /opt/config
 
 #Run the image as a non-root user
 #https://devcenter.heroku.com/articles/container-registry-and-runtime
-RUN adduser -D app; \
+RUN adduser -D 10001; \
     chmod -R a+rwx /opt/entrypoint
-USER 1000
+USER 10001
 
 EXPOSE 8080
 
