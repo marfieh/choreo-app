@@ -1,5 +1,8 @@
-# 这是 Choreo 组件配置文件
-# 它用来定义如何在 Choreo 平台上部署和运行您的服务
+# Choreo 组件配置文件
+# 用于定义如何在 Choreo 平台上部署和运行您的服务
+
+# 架构版本：指定使用的 Choreo 配置文件版本
+schemaVersion: 1.0.0
 
 # 组件类型：指定这是一个什么类型的服务
 type: Component
