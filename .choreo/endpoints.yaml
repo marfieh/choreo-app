@@ -8,6 +8,11 @@ endpoints:
     type: http
     context: /
     visibility: public
+    cors:
+      enabled: true
+    healthCheck:
+      path: /health
+      port: 8080
 
 # 如果您的服务有多个端点，可以在这里添加更多配置
 # 例如：
