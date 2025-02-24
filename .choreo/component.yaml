@@ -8,7 +8,7 @@ schemaVersion: 1.1
 type: Component
 
 # 组件名称：给您的服务起一个好记的名字
-name: MyDockerizedChoreoService
+name: cicakot
 
 # 版本：用于标识您的服务版本
 version: 1.0.0
@@ -19,6 +19,7 @@ build:
   type: docker
   # Dockerfile 的位置
   dockerfile: Dockerfile
+  context: .
 
 # 部署配置：定义如何在 Choreo 上运行您的服务
 deploy:
@@ -26,5 +27,15 @@ deploy:
   mode: web
   # 容器端口映射
   containerPort: 8080
+  env:
+    - name: PORT
+      value: "8080"
+  resources:
+    memory:
+      request: "256Mi"
+      limit: "512Mi"
+    cpu:
+      request: "0.1"
+      limit: "0.5"
 
 
