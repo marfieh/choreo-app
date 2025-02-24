@@ -8,7 +8,7 @@ schemaVersion: 1.1
 type: Component
 
 # 组件名称：给您的服务起一个好记的名字
-name: MyDockerizedChoreoService
+name: pingziiw
 
 # 版本：用于标识您的服务版本
 version: 1.0.0
